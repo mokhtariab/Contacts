@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="House_Management" Class="DataClassesSecondDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=.\sqlexpress;Initial Catalog=Contacts;Integrated Security=True" SettingsObjectName="Contacts_Prj.Properties.Settings" SettingsPropertyName="ContactsConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.TBL_SendSMS" Member="TBL_SendSMS">
+    <Type Name="TBL_SendSMS">
+      <Column Name="SMSCode" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Mobile_No" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="MessageText" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Status" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SMS_Few" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UserCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UseName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="Archive" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="SendDate" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="SendTime" Type="System.String" DbType="NVarChar(8)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

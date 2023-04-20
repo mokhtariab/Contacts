@@ -1,0 +1,452 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{43BF19FC-B71E-4FEC-B4F1-58D7FDDDB472}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Contacts_Prj</RootNamespace>
+    <AssemblyName>Contacts_Prj</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetZone>LocalIntranet</TargetZone>
+    <GenerateManifests>false</GenerateManifests>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <RunPostBuildEvent>OnOutputUpdated</RunPostBuildEvent>
+    <ApplicationIcon>books.ico</ApplicationIcon>
+    <Win32Resource>
+    </Win32Resource>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoWin32Manifest>true</NoWin32Manifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevComponents.DotNetBar2, Version=10.4.0.1, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v12.1, Version=12.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Design.v12.1, Version=12.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v12.1.Core, Version=12.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v12.1.Core, Version=12.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Reports.v12.1.Designer, Version=12.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v12.1, Version=12.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v12.1.UI, Version=12.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v12.1, Version=12.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v12.1.Design, Version=12.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v12.1, Version=12.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v12.1.Design, Version=12.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v12.1, Version=12.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v12.1.Design, Version=12.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v12.1, Version=12.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v12.1.Design, Version=12.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPivotGrid.v12.1, Version=12.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v12.1, Version=12.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v12.1.Design, Version=12.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v12.1, Version=12.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v12.1.Design, Version=12.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="mCoreLib, Version=1.2.17.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="PDUConverter, Version=1.11.0.0, Culture=neutral, PublicKeyToken=515d87df384dcc81, processorArchitecture=MSIL" />
+    <Reference Include="RSaEncryptionLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WinShutDownStyle, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\Function_Cls.cs" />
+    <Compile Include="Classes\SMSClass.cs" />
+    <Compile Include="Classes\SMS_Cls.cs" />
+    <Compile Include="DataClasses_Main.cs">
+      <DependentUpon>DataClasses_Main.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="DataClasses_Main.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataClasses_Main.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="DataClasses_Second1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataClasses_Second.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\SMS\SMSMobSelect_frm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\SMS\SMSMobSelect_frm.Designer.cs">
+      <DependentUpon>SMSMobSelect_frm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\Tel\NEMobGroup_frm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\Tel\NEMobGroup_frm.designer.cs">
+      <DependentUpon>NEMobGroup_frm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\Email\RegisterEmail_frm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\Email\RegisterEmail_frm.designer.cs">
+      <DependentUpon>RegisterEmail_frm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\Email\SendAdverAttach_frm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\Email\SendAdverAttach_frm.designer.cs">
+      <DependentUpon>SendAdverAttach_frm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\Email\SendAdverEMail_frm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\Email\SendAdverEMail_frm.designer.cs">
+      <DependentUpon>SendAdverEMail_frm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\SMS\SMSLogView_frm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\SMS\SMSLogView_frm.Designer.cs">
+      <DependentUpon>SMSLogView_frm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\SMS\ReciveSMS_frm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\SMS\ReciveSMS_frm.Designer.cs">
+      <DependentUpon>ReciveSMS_frm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\SearchInternet_frm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\SearchInternet_frm.Designer.cs">
+      <DependentUpon>SearchInternet_frm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForms\MainHM_frm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForms\MainHM_frm.Designer.cs">
+      <DependentUpon>MainHM_frm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\Global_Cls.cs" />
+    <Compile Include="Other\MessageSara_Frm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Other\MessageSara_Frm.Designer.cs">
+      <DependentUpon>MessageSara_Frm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Setting\RstPass_frm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Setting\RstPass_frm.Designer.cs">
+      <DependentUpon>RstPass_frm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\SMS\SendAdverSMS_frm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\SMS\SendAdverSMS_frm.Designer.cs">
+      <DependentUpon>SendAdverSMS_frm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Setting\Setting_frm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Setting\Setting_frm.Designer.cs">
+      <DependentUpon>Setting_frm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\Tel\NETelMob_frm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\Tel\NETelMob_frm.Designer.cs">
+      <DependentUpon>NETelMob_frm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\Tel\ListTelMob_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Tools\Tel\ListTelMob_UC.Designer.cs">
+      <DependentUpon>ListTelMob_UC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Web References\SMSService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="DataClasses_Main.dbml.layout">
+      <DependentUpon>DataClasses_Main.dbml</DependentUpon>
+    </None>
+    <None Include="DataClasses_Second.dbml.layout">
+      <DependentUpon>DataClasses_Second.dbml</DependentUpon>
+    </None>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Tools\SMS\SMSMobSelect_frm.resx">
+      <DependentUpon>SMSMobSelect_frm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\Tel\NEMobGroup_frm.resx">
+      <DependentUpon>NEMobGroup_frm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\Email\RegisterEmail_frm.resx">
+      <DependentUpon>RegisterEmail_frm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\Email\SendAdverAttach_frm.resx">
+      <DependentUpon>SendAdverAttach_frm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\Email\SendAdverEMail_frm.resx">
+      <DependentUpon>SendAdverEMail_frm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\SMS\SMSLogView_frm.resx">
+      <DependentUpon>SMSLogView_frm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\SMS\ReciveSMS_frm.resx">
+      <DependentUpon>ReciveSMS_frm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\SearchInternet_frm.resx">
+      <DependentUpon>SearchInternet_frm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForms\MainHM_frm.resx">
+      <DependentUpon>MainHM_frm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForms\StartHM_frm.resx">
+      <DependentUpon>StartHM_frm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Other\MessageSara_Frm.resx">
+      <DependentUpon>MessageSara_Frm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setting\RstPass_frm.resx">
+      <DependentUpon>RstPass_frm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setting\Setting_frm.resx">
+      <DependentUpon>Setting_frm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\Tel\NETelMob_frm.resx">
+      <DependentUpon>NETelMob_frm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\Tel\ListTelMob_UC.resx">
+      <DependentUpon>ListTelMob_UC.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\SMS\SendAdverSMS_frm.resx">
+      <DependentUpon>SendAdverSMS_frm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\UserPermission_frm.resx">
+      <DependentUpon>UserPermission_frm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\NEUser_frm.resx">
+      <DependentUpon>NEUser_frm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\ListUser_UC.resx">
+      <DependentUpon>ListUser_UC.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="DataClasses_Main.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>DataClasses_Main.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataClasses_Second.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>DataClasses_Second1.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="MainForms\StartHM_frm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForms\StartHM_frm.Designer.cs">
+      <DependentUpon>StartHM_frm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\UserPermission_frm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users\UserPermission_frm.Designer.cs">
+      <DependentUpon>UserPermission_frm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\NEUser_frm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users\NEUser_frm.Designer.cs">
+      <DependentUpon>NEUser_frm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\ListUser_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Users\ListUser_UC.Designer.cs">
+      <DependentUpon>ListUser_UC.cs</DependentUpon>
+    </Compile>
+    <None Include="Web References\SMSService\C_News1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SMSService\Messages1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SMSService\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\SMSService\RequestInfo1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SMSService\v2.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="IWshRuntimeLibrary">
+      <Guid>{F935DC20-1CF0-11D0-ADB9-00C04FD58A0B}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="books.ico" />
+    <None Include="Web References\SMSService\v2.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://parsasms.com/webservice/v2.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\SMSService\</RelPath>
+      <UpdateFromURL>http://parsasms.com/webservice/v2.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Contacts_com_parsasms_v2</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>if /I "$(ConfigurationName)" == "Release" Eazfuscator.NET.exe "$(TargetPath)" --msbuild-project-path "$(ProjectPath)" --msbuild-project-configuration "$(ConfigurationName)" -n --newline-flush</PostBuildEvent>
+  </PropertyGroup>
+</Project>
